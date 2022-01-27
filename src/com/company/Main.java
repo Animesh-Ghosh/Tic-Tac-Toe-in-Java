@@ -39,12 +39,12 @@ public class Main {
                         game.displayBoard();
                         System.out.println("It's a draw!");
                         break;
+                    }else {
+                        //switch player from 'X' to 'O' or vice-verse
+                        game.switchPlayer();
+                        //display the board
+                        game.displayBoard();
                     }
-
-                    //switch player from 'X' to 'O' or vice-verse
-                    game.switchPlayer();
-                    //display the board
-                    game.displayBoard();
                 } else {
                     System.out.println("There is already something, Player" + current + " select something else (1-9).");
                 }
